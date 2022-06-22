@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mewcraft:mewlings_tail"
+    },
+    {
+      "item": "mewcraft:sakura_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "mewcraft:mew_ingot"
+  }
+}
