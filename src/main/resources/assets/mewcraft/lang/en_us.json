@@ -1,5 +1,7 @@
 {
   "item.mewcraft.mew_ingot": "Mew Ingot",
   "item.mewcraft.mewlings_tail": "Mew Tail",
-  "item.mewcraft.sakura_ingot": "Sakura Ingot"
+  "item.mewcraft.sakura_ingot": "Sakura Ingot",
+
+  "itemGroup.mewcraft.mewcraft": "Mewcraft Tab"
 }
