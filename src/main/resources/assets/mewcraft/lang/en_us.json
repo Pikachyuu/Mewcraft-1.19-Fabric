@@ -3,5 +3,7 @@
   "item.mewcraft.mewlings_tail": "Mew Tail",
   "item.mewcraft.sakura_ingot": "Sakura Ingot",
 
-  "itemGroup.mewcraft.mewcraft": "Mewcraft Tab"
+  "block.mewcraft.mewnite_block": "Mewnite Block",
+
+  "itemGroup.mewcraft.mewcraft": "Mewcraft"
 }
