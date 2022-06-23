@@ -17,6 +17,9 @@ import net.pikachyuu.mewcraft.item.ModItemGroup;
 
 public class ModBlocks {
 
+    public static final Block SAKURA_BLOCK = registerBlock("sakura_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(2).requiresTool()), ModItemGroup.MEWCRAFT);
+
     public static final Block MEWNITE_BLOCK = registerBlock("mewnite_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(2).requiresTool()), ModItemGroup.MEWCRAFT);
 

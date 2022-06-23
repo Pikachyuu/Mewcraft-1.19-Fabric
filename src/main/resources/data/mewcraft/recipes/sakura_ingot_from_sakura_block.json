@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sakura_ingot",
+  "ingredients": [
+    {
+      "item": "mewcraft:sakura_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "mewcraft:sakura_ingot"
+  }
+}
