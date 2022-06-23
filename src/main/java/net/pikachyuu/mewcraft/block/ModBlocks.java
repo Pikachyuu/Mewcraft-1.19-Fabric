@@ -8,6 +8,7 @@ import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
@@ -17,7 +18,7 @@ import net.pikachyuu.mewcraft.item.ModItemGroup;
 public class ModBlocks {
 
     public static final Block MEWNITE_BLOCK = registerBlock("mewnite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4).requiresTool()), ModItemGroup.MEWCRAFT);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(2).requiresTool()), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_ORE = registerBlock("sakura_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4).requiresTool(),
