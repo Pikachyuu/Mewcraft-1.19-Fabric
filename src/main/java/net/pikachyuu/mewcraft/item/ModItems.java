@@ -8,6 +8,9 @@ import net.pikachyuu.mewcraft.Mewcraft;
 
 public class ModItems {
 
+    public static final Item RAW_SAKURA = registerItem("raw_sakura",
+            new Item(new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
     public static final Item SAKURA_INGOT = registerItem("sakura_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
