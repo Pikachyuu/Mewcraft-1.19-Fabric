@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "mewcraft:mewlings_tail"
+  },
+  "base": {
+    "item": "mewcraft:sakura_ingot"
+  },
+  "result": {
+    "item": "mewcraft:mewnite_ingot"
+  }
+}
