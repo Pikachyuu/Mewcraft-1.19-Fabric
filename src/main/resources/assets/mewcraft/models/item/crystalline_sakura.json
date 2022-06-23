@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mewcraft:item/raw_sakura"
+    "layer0": "mewcraft:item/crystalline_sakura"
   }
 }
