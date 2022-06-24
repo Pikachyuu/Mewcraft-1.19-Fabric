@@ -2,12 +2,13 @@ package net.pikachyuu.mewcraft.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterials;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.pikachyuu.mewcraft.Mewcraft;
+import net.pikachyuu.mewcraft.item.custom.ModAxeItem;
+import net.pikachyuu.mewcraft.item.custom.ModHoeItem;
+import net.pikachyuu.mewcraft.item.custom.ModPickaxeItem;
 
 public class ModItems {
 
@@ -42,6 +43,25 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.SAKURA, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
+    public static final Item SAKURA_SWORD = registerItem("sakura_sword",
+            new SwordItem(ModToolMaterials.SAKURA, 3, -2.4F,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item SAKURA_PICKAXE = registerItem("sakura_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.SAKURA, 1, -2.8F,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item SAKURA_AXE = registerItem("sakura_axe",
+            new ModAxeItem(ModToolMaterials.SAKURA, 6, -3.1F,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item SAKURA_SHOVEL = registerItem("sakura_shovel",
+            new ShovelItem(ModToolMaterials.SAKURA, 1, -2.8F,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item SAKURA_HOE = registerItem("sakura_hoe",
+            new ModHoeItem(ModToolMaterials.SAKURA, 0, -2.8F,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Mewcraft.MOD_ID, name), item);
     }

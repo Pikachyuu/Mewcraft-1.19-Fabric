@@ -8,7 +8,7 @@ import net.pikachyuu.mewcraft.Mewcraft;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    SAKURA(4, 2031,12.0F,5.0F,20, () -> {
+    SAKURA(4, 2678,15.0F,5.0F,20, () -> {
         return Ingredient.ofItems(ModItems.SAKURA_INGOT);
     });
 
