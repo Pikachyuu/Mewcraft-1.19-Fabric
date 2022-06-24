@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "mewcraft:sakura_ingot"
+      "item": "minecraft:stick"
     },
     "X": {
-      "item": "minecraft:stick"
+      "item": "mewcraft:sakura_ingot"
     }
   },
   "pattern": [
-    "## ",
-    "#x ",
-    " X "
+    "XX",
+    "X#",
+    " #"
   ],
   "result": {
     "item": "mewcraft:sakura_axe"
