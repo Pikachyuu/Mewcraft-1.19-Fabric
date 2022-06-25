@@ -3,6 +3,8 @@ package net.pikachyuu.mewcraft;
 import net.fabricmc.api.ModInitializer;
 import net.pikachyuu.mewcraft.block.ModBlocks;
 import net.pikachyuu.mewcraft.item.ModItems;
+import net.pikachyuu.mewcraft.world.feature.ModConfiguredFeatures;
+import net.pikachyuu.mewcraft.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,8 +14,12 @@ public class Mewcraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModConfiguredFeatures.registerConfiguredFeatures();
+
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
+
+		ModWorldGen.generateModWorldGen();
 	}
 
 }

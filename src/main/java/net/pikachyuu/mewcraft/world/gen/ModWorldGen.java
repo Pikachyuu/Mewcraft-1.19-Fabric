@@ -1,0 +1,8 @@
+package net.pikachyuu.mewcraft.world.gen;
+import net.pikachyuu.mewcraft.world.gen.ModOreGeneration;
+
+public class ModWorldGen {
+    public static void generateModWorldGen(){
+        ModOreGeneration.generateOres();
+    }
+}
