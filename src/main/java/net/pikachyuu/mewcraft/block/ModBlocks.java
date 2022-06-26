@@ -2,6 +2,7 @@ package net.pikachyuu.mewcraft.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
@@ -30,6 +31,12 @@ public class ModBlocks {
     public static final Block DEEPSLATE_SAKURA_ORE = registerBlock("deepslate_sakura_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4).requiresTool(),
                     UniformIntProvider.create(8, 12)), ModItemGroup.MEWCRAFT);
+
+    public static final Block TEST_BLOCK_1 = registerBlock("test_block_1",
+            new Block(FabricBlockSettings.of(Material.BARRIER)), ModItemGroup.MEWCRAFT);
+
+    public static final Block TEST_BLOCK_2 = registerBlock("test_block_2",
+            new Block(FabricBlockSettings.of(Material.BARRIER)), ModItemGroup.MEWCRAFT);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
