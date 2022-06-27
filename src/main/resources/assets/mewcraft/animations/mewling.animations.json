@@ -1,0 +1,111 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mewling.idle": {
+			"animation_length": 39.66667,
+			"bones": {
+				"body": {
+					"rotation": {
+						"vector": [-24.66569, 4.20854, 9.07947]
+					}
+				},
+				"torso": {
+					"rotation": {
+						"vector": [19.8423, 2.55868, -7.05239]
+					}
+				},
+				"shoulder_L": {
+					"rotation": {
+						"vector": ["-51.127 + math.cos(query.anim_time*120)", -15.46973, -11.71658]
+					}
+				},
+				"wrist_L": {
+					"rotation": {
+						"vector": ["math.cos(query.anim_time*150)", 17.5, 0]
+					}
+				},
+				"shoulder_R": {
+					"rotation": {
+						"vector": ["-38.4635 + math.cos(query.anim_time*120)", 11.84911, 10.73567]
+					}
+				},
+				"wrist_R": {
+					"rotation": {
+						"vector": ["math.cos(query.anim_time*150)", -17.5, 0]
+					}
+				},
+				"neck": {
+					"rotation": {
+						"vector": [10, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"vector": ["4.1 + math.sin(query.anim_time*120)", 0, 7]
+					}
+				},
+				"hip_L": {
+					"rotation": {
+						"vector": ["-32.1461 + math.sin(query.anim_time*120)", -23.44643, -0.32026]
+					}
+				},
+				"ankle_L": {
+					"rotation": {
+						"vector": ["-55 + math.cos(query.anim_time*120)", 0, 0]
+					}
+				},
+				"hip_R": {
+					"rotation": {
+						"vector": ["-17.06 + math.sin(query.anim_time*120)", 20.95, -3.98]
+					}
+				},
+				"ankle_R": {
+					"rotation": {
+						"vector": ["-35 + math.cos(query.anim_time*120)", 0, 0]
+					}
+				},
+				"tail_1": {
+					"rotation": {
+						"vector": [16.17354, -21.69365, -6.1191]
+					}
+				},
+				"tail_2": {
+					"rotation": {
+						"vector": [21.7849, 34.18239, -3.22511]
+					}
+				},
+				"tail_3": {
+					"rotation": {
+						"vector": [22.9198, 39.62687, -1.98699]
+					}
+				},
+				"tail_4": {
+					"rotation": {
+						"vector": [19.65151, 36.13377, -18.37386]
+					}
+				},
+				"tail_end": {
+					"rotation": {
+						"vector": [25.95628, 25.1042, -6.05504]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"vector": ["8.4424 + math.cos(query.anim_time*120)", "-27.2451 + math.cos(query.anim_time*120)", "-3.8871 + math.cos(query.anim_time*120) "]
+					}
+				},
+				"nose": {
+					"rotation": {
+						"vector": [-2.5, 0, 0]
+					}
+				},
+				"mew": {
+					"position": {
+						"vector": [0, "math.sin(query.anim_time*120)", 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
