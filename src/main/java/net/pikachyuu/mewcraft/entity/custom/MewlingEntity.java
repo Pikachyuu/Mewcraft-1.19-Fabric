@@ -16,6 +16,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.pikachyuu.mewcraft.sound.ModSoundEvents;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -43,7 +44,7 @@ public class MewlingEntity extends AnimalEntity implements IAnimatable {
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 40.0d)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25f);
     }
 
     //You can mess with these me. They might be fun
@@ -60,10 +61,9 @@ public class MewlingEntity extends AnimalEntity implements IAnimatable {
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if(event.isMoving()){
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mewling.idle", true)); //Change this to walk animation
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mewling.moving", true)); //Change this to walk animation
             return PlayState.CONTINUE;
         }
-
         event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mewling.idle", true));
         return PlayState.CONTINUE;
     }
@@ -80,19 +80,13 @@ public class MewlingEntity extends AnimalEntity implements IAnimatable {
     }
 
     @Override
-    protected SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_DOLPHIN_AMBIENT;
-    }
+    protected SoundEvent getAmbientSound() { return SoundEvents.ENTITY_DOLPHIN_AMBIENT; }
 
     @Override
-    protected SoundEvent getHurtSound(DamageSource source) {
-        return SoundEvents.ENTITY_DOLPHIN_AMBIENT;
-    }
+    protected SoundEvent getHurtSound(DamageSource source) { return SoundEvents.ENTITY_DOLPHIN_HURT; }
 
     @Override
-    protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_PIG_DEATH;
-    }
+    protected SoundEvent getDeathSound() { return SoundEvents.ENTITY_PIG_DEATH; }
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {

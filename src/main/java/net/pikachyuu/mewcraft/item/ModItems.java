@@ -64,9 +64,11 @@ public class ModItems {
     public static final Item SAKURA_HOE = registerItem("sakura_hoe",
             new ModHoeItem(ModToolMaterials.SAKURA, 0, -2.8F,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
     public static final Item MEWLING_SPAWN_EGG = registerItem("mewling_spawn_egg",
-            new SpawnEggItem(ModEntities.MEWLING, 1, 2,
+            new SpawnEggItem(ModEntities.MEWLING, 16768255, 14044277,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Mewcraft.MOD_ID, name), item);
     }

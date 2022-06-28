@@ -22,5 +22,9 @@
   "block.mewcraft.sakura_ore": "Sakura Ore",
   "block.mewcraft.deepslate_sakura_ore": "Deepslate Sakura Ore",
 
+  "mewcraft.entity_mewling_ambient": "Mewling Chirp",
+  "mewcraft.entity_mewling_hurt": "Mewling Injured",
+  "mewcraft.entity_mewling_death": "Mewling Death",
+
   "itemGroup.mewcraft.mewcraft": "Mewcraft"
 }

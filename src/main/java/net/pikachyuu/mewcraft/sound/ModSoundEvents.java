@@ -1,6 +1,18 @@
 package net.pikachyuu.mewcraft.sound;
 
-import net.minecraft.sound.SoundEvents;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+import net.pikachyuu.mewcraft.Mewcraft;
 
-public class ModSoundEvents extends SoundEvents {
+public class ModSoundEvents {
+
+    public static SoundEvent ENTITY_MEWLING_AMBIENT = registerSoundEvent("entity_mewling_ambient");
+    public static SoundEvent ENTITY_MEWLING_HURT = registerSoundEvent("entity_mewling_hurt");
+    public static SoundEvent ENTITY_MEWLING_DEATH = registerSoundEvent("entity_mewling_death");
+
+    private static SoundEvent registerSoundEvent(String name) {
+        Identifier id = new Identifier(Mewcraft.MOD_ID, name.replaceAll("_", "."));
+        return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
+    }
 }
