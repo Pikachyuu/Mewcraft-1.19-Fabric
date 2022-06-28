@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mewcraft:block/sakura_wood",
+    "side": "mewcraft:block/sakura_wood"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mewcraft:sakura_log",
+    "mewcraft:sakura_wood",
+    "mewcraft:stripped_sakura_log",
+    "mewcraft:stripped_sakura_wood",
+    "mewcraft:sakura_planks"
+  ]
+}

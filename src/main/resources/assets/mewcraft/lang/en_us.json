@@ -21,6 +21,12 @@
   "block.mewcraft.mewnite_block": "Mewnite Block",
   "block.mewcraft.sakura_ore": "Sakura Ore",
   "block.mewcraft.deepslate_sakura_ore": "Deepslate Sakura Ore",
+  "block.mewcraft.sakura_log": "Sakura Log",
+  "block.mewcraft.sakura_wood": "Sakura Wood",
+  "block.mewcraft.stripped_sakura_log": "Stripped Sakura Log",
+  "block.mewcraft.stripped_sakura_wood": "Stripped Sakura Wood",
+  "block.mewcraft.sakura_planks": "Sakura Planks",
+
 
   "mewcraft.entity_mewling_ambient": "Mewling Chirp",
   "mewcraft.entity_mewling_hurt": "Mewling Injured",
