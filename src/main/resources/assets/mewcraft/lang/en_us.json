@@ -28,6 +28,10 @@
   "block.mewcraft.sakura_planks": "Sakura Planks",
   "block.mewcraft.sakura_leaves": "Sakura Leaves",
   "block.mewcraft.sakura_sapling": "Sakura Sapling",
+  "block.mewcraft.sakura_fence": "Sakura Fence",
+  "block.mewcraft.sakura_fence_gate": "Sakura Fence Gate",
+  "block.mewcraft.sakura_pressure_plate": "Sakura Pressure Plate",
+  "block.mewcraft.sakura_button": "Sakura Button",
 
 
   "mewcraft.entity_mewling_ambient": "Mewling Chirp",

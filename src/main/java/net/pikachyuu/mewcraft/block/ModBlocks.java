@@ -6,7 +6,6 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
@@ -65,23 +64,24 @@ public class ModBlocks {
     */
 
     public static final Block SAKURA_FENCE = registerBlock("sakura_fence",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+            new FenceBlock(FabricBlockSettings.copy(Blocks.OAK_FENCE)), ModItemGroup.MEWCRAFT);
 
-    public static final Block SAKURA_GATE = registerBlock("sakura_gate",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+    public static final Block SAKURA_FENCE_GATE = registerBlock("sakura_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copy(Blocks.OAK_FENCE_GATE)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_PRESSURE_PLATE = registerBlock("sakura_pressure_plate",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copy(Blocks.OAK_PRESSURE_PLATE)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_BUTTON = registerBlock("sakura_button",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+            new WoodenButtonBlock(FabricBlockSettings.copy(Blocks.OAK_BUTTON)), ModItemGroup.MEWCRAFT);
 
+    /*
     public static final Block SAKURA_STAIRS = registerBlock("sakura_stairs",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+            new StairsBlock(FabricBlockSettings.copy(Blocks.OAK_STAIRS)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_SLAB = registerBlock("sakura_slab",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
-
+            new SlabBlock()Block(FabricBlockSettings.copy(Blocks.OAK_SLAB)), ModItemGroup.MEWCRAFT);
+     */
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(Mewcraft.MOD_ID, name), block);

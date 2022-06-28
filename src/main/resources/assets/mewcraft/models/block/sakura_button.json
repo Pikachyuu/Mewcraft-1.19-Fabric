@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "mewcraft:block/sakura_planks"
+  }
+}
