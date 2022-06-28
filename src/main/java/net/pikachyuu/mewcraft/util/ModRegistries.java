@@ -10,6 +10,8 @@ import net.pikachyuu.mewcraft.entity.custom.MewlingEntity;
 public class ModRegistries {
     public static void registerModStuffs(){
         registerAttributes();
+        registerFlammableBlock();
+        registerStrippables();
     }
 
     private static void registerAttributes() {
@@ -24,6 +26,8 @@ public class ModRegistries {
         instance.add(ModBlocks.STRIPPED_SAKURA_LOG, 5, 20);
         instance.add(ModBlocks.STRIPPED_SAKURA_WOOD, 5, 20);
         instance.add(ModBlocks.SAKURA_PLANKS, 5, 20);
+        instance.add(ModBlocks.SAKURA_LEAVES, 5, 20);
+        instance.add(ModBlocks.SAKURA_SAPLING, 30, 60);
     }
 
     private static void registerStrippables() {

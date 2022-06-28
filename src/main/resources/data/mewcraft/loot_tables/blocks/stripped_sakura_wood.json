@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stripped_sakura_wood"
+          "name": "mewcraft:stripped_sakura_wood"
         }
       ],
       "rolls": 1.0

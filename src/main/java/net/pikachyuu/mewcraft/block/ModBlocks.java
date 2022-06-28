@@ -11,7 +11,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.pikachyuu.mewcraft.Mewcraft;
+import net.pikachyuu.mewcraft.block.custom.ModSaplingBlock;
 import net.pikachyuu.mewcraft.item.ModItemGroup;
+import net.pikachyuu.mewcraft.world.feature.tree.SakuraSaplingGenerator;
 
 public class ModBlocks {
 
@@ -36,21 +38,49 @@ public class ModBlocks {
                     UniformIntProvider.create(8, 12)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_LOG = registerBlock("sakura_log",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.MEWCRAFT);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_WOOD = registerBlock("sakura_wood",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.MEWCRAFT);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD)), ModItemGroup.MEWCRAFT);
 
     public static final Block STRIPPED_SAKURA_LOG = registerBlock("stripped_sakura_log",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()), ModItemGroup.MEWCRAFT);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG)), ModItemGroup.MEWCRAFT);
 
     public static final Block STRIPPED_SAKURA_WOOD = registerBlock("stripped_sakura_wood",
-            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()), ModItemGroup.MEWCRAFT);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD)), ModItemGroup.MEWCRAFT);
 
-    //May have to add some sort of tag to the wood
     public static final Block SAKURA_PLANKS = registerBlock("sakura_planks",
-            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()), ModItemGroup.MEWCRAFT);
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.MEWCRAFT);
 
+    public static final Block SAKURA_LEAVES = registerBlock("sakura_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_SAPLING = registerBlock("sakura_sapling",
+            new ModSaplingBlock(new SakuraSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque().strength(1.0f)), ModItemGroup.MEWCRAFT);
+
+    /*
+    public static final Block SAKURA_GRASS = registerBlock("sakura_grass",
+            new GrassBlock(FabricBlockSettings.copy(Blocks.GRASS_BLOCK).strength(1.0f)), ModItemGroup.MEWCRAFT);
+    */
+
+    public static final Block SAKURA_FENCE = registerBlock("sakura_fence",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_GATE = registerBlock("sakura_gate",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_PRESSURE_PLATE = registerBlock("sakura_pressure_plate",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_BUTTON = registerBlock("sakura_button",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_STAIRS = registerBlock("sakura_stairs",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_SLAB = registerBlock("sakura_slab",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(2.0f)), ModItemGroup.MEWCRAFT);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
