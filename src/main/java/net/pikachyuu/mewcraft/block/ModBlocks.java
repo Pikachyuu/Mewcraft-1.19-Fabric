@@ -11,6 +11,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.pikachyuu.mewcraft.Mewcraft;
 import net.pikachyuu.mewcraft.block.custom.ModSaplingBlock;
+import net.pikachyuu.mewcraft.block.entity.ModSignTypes;
 import net.pikachyuu.mewcraft.item.ModItemGroup;
 import net.pikachyuu.mewcraft.world.feature.tree.SakuraSaplingGenerator;
 
@@ -52,7 +53,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_LEAVES = registerBlock("sakura_leaves",
-            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.MEWCRAFT);
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_SAPLING = registerBlock("sakura_sapling",
             new ModSaplingBlock(new SakuraSaplingGenerator(),
@@ -75,13 +76,29 @@ public class ModBlocks {
     public static final Block SAKURA_BUTTON = registerBlock("sakura_button",
             new WoodenButtonBlock(FabricBlockSettings.copy(Blocks.OAK_BUTTON)), ModItemGroup.MEWCRAFT);
 
-    /*
-    public static final Block SAKURA_STAIRS = registerBlock("sakura_stairs",
-            new StairsBlock(FabricBlockSettings.copy(Blocks.OAK_STAIRS)), ModItemGroup.MEWCRAFT);
+    public static final Block SAKURA_DOOR = registerBlock("sakura_door",
+            new DoorBlock(FabricBlockSettings.copy(Blocks.OAK_DOOR)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_TRAPDOOR = registerBlock("sakura_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copy(Blocks.OAK_TRAPDOOR)), ModItemGroup.MEWCRAFT);
 
     public static final Block SAKURA_SLAB = registerBlock("sakura_slab",
-            new SlabBlock()Block(FabricBlockSettings.copy(Blocks.OAK_SLAB)), ModItemGroup.MEWCRAFT);
-     */
+            new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_SLAB)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_STAIRS = registerBlock("sakura_stairs",
+            new StairsBlock(ModBlocks.SAKURA_PLANKS.getDefaultState(),
+                    FabricBlockSettings.copy(Blocks.OAK_STAIRS)), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_WALL_SIGN_BLOCK = registerBlockWithoutBlockItem("sakura_wall_sign",
+            new WallSignBlock(FabricBlockSettings.copy(Blocks.OAK_WALL_SIGN), ModSignTypes.SAKURA), ModItemGroup.MEWCRAFT);
+
+    public static final Block SAKURA_SIGN_BLOCK = registerBlockWithoutBlockItem("sakura_sign",
+            new SignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN), ModSignTypes.SAKURA), ModItemGroup.MEWCRAFT);
+
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
+        return Registry.register(Registry.BLOCK, new Identifier(Mewcraft.MOD_ID, name), block);
+    }
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(Mewcraft.MOD_ID, name), block);

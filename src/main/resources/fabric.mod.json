@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.pikachyuu.mewcraft.MewcraftClient"
+    ],
+    "terrablender": [
+      "net.pikachyuu.mewcraft.Mewcraft"
     ]
   },
   "mixins": [

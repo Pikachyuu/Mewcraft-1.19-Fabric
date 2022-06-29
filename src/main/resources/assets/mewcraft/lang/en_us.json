@@ -32,6 +32,11 @@
   "block.mewcraft.sakura_fence_gate": "Sakura Fence Gate",
   "block.mewcraft.sakura_pressure_plate": "Sakura Pressure Plate",
   "block.mewcraft.sakura_button": "Sakura Button",
+  "block.mewcraft.sakura_door": "Sakura Door",
+  "block.mewcraft.sakura_trapdoor": "Sakura Trapdoor",
+  "block.mewcraft.sakura_slab": "Sakura Slab",
+  "block.mewcraft.sakura_stairs": "Sakura Stairs",
+  "block.mewcraft.sakura_sign": "Sakura Sign",
 
 
   "mewcraft.entity_mewling_ambient": "Mewling Chirp",

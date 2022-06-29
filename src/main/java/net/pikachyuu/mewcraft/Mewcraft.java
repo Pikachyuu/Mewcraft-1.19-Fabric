@@ -3,6 +3,7 @@ package net.pikachyuu.mewcraft;
 import net.fabricmc.api.ModInitializer;
 import net.pikachyuu.mewcraft.block.ModBlocks;
 import net.pikachyuu.mewcraft.item.ModItems;
+import net.pikachyuu.mewcraft.sound.ModSoundEvents;
 import net.pikachyuu.mewcraft.util.ModRegistries;
 import net.pikachyuu.mewcraft.world.feature.ModConfiguredFeatures;
 import net.pikachyuu.mewcraft.world.gen.ModWorldGen;
@@ -15,6 +16,7 @@ public class Mewcraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModSoundEvents.registerModSoundEvents();
 		ModConfiguredFeatures.registerConfiguredFeatures();
 
 		ModBlocks.registerModBlocks();

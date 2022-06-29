@@ -3,6 +3,7 @@ package net.pikachyuu.mewcraft.util;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.util.registry.Registry;
 import net.pikachyuu.mewcraft.block.ModBlocks;
 import net.pikachyuu.mewcraft.entity.ModEntities;
 import net.pikachyuu.mewcraft.entity.custom.MewlingEntity;
@@ -34,4 +35,5 @@ public class ModRegistries {
         StrippableBlockRegistry.register(ModBlocks.SAKURA_LOG, ModBlocks.STRIPPED_SAKURA_LOG);
         StrippableBlockRegistry.register(ModBlocks.SAKURA_WOOD, ModBlocks.STRIPPED_SAKURA_WOOD);
     }
+
 }

@@ -2,15 +2,18 @@ package net.pikachyuu.mewcraft.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.vehicle.BoatEntity;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.pikachyuu.mewcraft.Mewcraft;
+import net.pikachyuu.mewcraft.block.ModBlocks;
 import net.pikachyuu.mewcraft.entity.ModEntities;
 import net.pikachyuu.mewcraft.entity.custom.MewlingEntity;
 import net.pikachyuu.mewcraft.item.custom.ModAxeItem;
 import net.pikachyuu.mewcraft.item.custom.ModHoeItem;
 import net.pikachyuu.mewcraft.item.custom.ModPickaxeItem;
+import net.pikachyuu.mewcraft.util.CustomBoatType;
 
 public class ModItems {
 
@@ -68,6 +71,11 @@ public class ModItems {
     public static final Item MEWLING_SPAWN_EGG = registerItem("mewling_spawn_egg",
             new SpawnEggItem(ModEntities.MEWLING, 16768255, 14044277,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item SAKURA_SIGN = registerItem("sakura_sign",
+            new SignItem(new FabricItemSettings().group(ModItemGroup.MEWCRAFT).maxCount(16),
+                    ModBlocks.SAKURA_SIGN_BLOCK, ModBlocks.SAKURA_WALL_SIGN_BLOCK));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Mewcraft.MOD_ID, name), item);

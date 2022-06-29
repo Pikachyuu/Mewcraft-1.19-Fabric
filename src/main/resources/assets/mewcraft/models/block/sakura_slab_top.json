@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "mewcraft:block/sakura_planks",
+    "side": "mewcraft:block/sakura_planks",
+    "top": "mewcraft:block/sakura_planks"
+  }
+}

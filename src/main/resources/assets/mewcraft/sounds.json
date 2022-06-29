@@ -1,6 +1,5 @@
 {
-  "entity.mewling.ambient": {
-    "subtitle": "mewcraft:entity_mewling_ambient",
+  "entity_mewling_ambient": {
     "sounds": [
       {
         "name": "mewcraft:mob/mewling/entity_mewling_ambient"
@@ -8,16 +7,14 @@
     ]
   },
 
-  "entity.mewling.hurt": {
-    "subtitle": "mewcraft.entity_mewling_hurt",
+  "entity_mewling_hurt": {
     "sounds": [
       {
         "name": "mewcraft:mob/mewling/entity_mewling_hurt"
       }
     ]
   },
-  "entity.mewling.death": {
-    "subtitle": "mewcraft.entity_mewling_death",
+  "entity_mewling_death": {
     "sounds": [
       {
         "name": "mewcraft:mob/mewling/entity_mewling_death"

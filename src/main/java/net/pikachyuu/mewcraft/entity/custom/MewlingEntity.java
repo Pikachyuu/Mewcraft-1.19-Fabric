@@ -80,13 +80,13 @@ public class MewlingEntity extends AnimalEntity implements IAnimatable {
     }
 
     @Override
-    protected SoundEvent getAmbientSound() { return SoundEvents.ENTITY_DOLPHIN_AMBIENT; }
+    protected SoundEvent getAmbientSound() { return ModSoundEvents.ENTITY_MEWLING_AMBIENT; }
 
     @Override
-    protected SoundEvent getHurtSound(DamageSource source) { return SoundEvents.ENTITY_DOLPHIN_HURT; }
+    protected SoundEvent getHurtSound(DamageSource source) { return ModSoundEvents.ENTITY_MEWLING_HURT; }
 
     @Override
-    protected SoundEvent getDeathSound() { return SoundEvents.ENTITY_PIG_DEATH; }
+    protected SoundEvent getDeathSound() { return ModSoundEvents.ENTITY_MEWLING_DEATH; }
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState state) {

@@ -12,7 +12,10 @@ public class ModSoundEvents {
     public static SoundEvent ENTITY_MEWLING_DEATH = registerSoundEvent("entity_mewling_death");
 
     private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = new Identifier(Mewcraft.MOD_ID, name.replaceAll("_", "."));
+        Identifier id = new Identifier(Mewcraft.MOD_ID, name);
         return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
+    }
+    public static void registerModSoundEvents() {
+        Mewcraft.LOGGER.debug("Register Mod Sound Events " + Mewcraft.MOD_ID);
     }
 }

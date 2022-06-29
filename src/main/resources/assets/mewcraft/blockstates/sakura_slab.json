@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mewcraft:block/sakura_slab"
+    },
+    "type=double": {
+      "model": "mewcraft:block/sakura_planks"
+    },
+    "type=top": {
+      "model": "mewcraft:block/sakura_slab_top"
+    }
+  }
+}
