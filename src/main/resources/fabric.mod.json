@@ -21,11 +21,11 @@
     "main": [
       "net.pikachyuu.mewcraft.Mewcraft"
     ],
-    "client": [
-      "net.pikachyuu.mewcraft.MewcraftClient"
-    ],
     "terrablender": [
       "net.pikachyuu.mewcraft.Mewcraft"
+    ],
+    "client": [
+      "net.pikachyuu.mewcraft.MewcraftClient"
     ]
   },
   "mixins": [
