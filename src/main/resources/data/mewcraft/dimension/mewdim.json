@@ -1,0 +1,12 @@
+{
+  "type": "mewcraft:mewdim",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": -485105949,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:plains"
+    }
+  }
+}
