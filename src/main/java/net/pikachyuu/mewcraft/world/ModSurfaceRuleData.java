@@ -12,14 +12,14 @@ public class ModSurfaceRuleData {
 
     public static MaterialRules.MaterialRule makeRules()
     {
-        MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
+        MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 6);
         MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
 
 
         return MaterialRules.sequence(
-                MaterialRules.condition(MaterialRules.surface(), grassSurface)
-        );
+                MaterialRules.condition(MaterialRules.not(MaterialRules.STONE_DEPTH_FLOOR), STONE),
 
+                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GRASS_BLOCK));
     }
 
     private static MaterialRules.MaterialRule makeStateRule(Block block)
