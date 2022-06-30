@@ -15,6 +15,12 @@
   "item.mewcraft.sakura_hoe": "Sakura Hoe",
   "item.mewcraft.mewling_spawn_egg": "Mewling Spawn Egg",
 
+  "item.mewcraft.song_music_disc_1": "Music Disc",
+  "item.mewcraft.song_music_disc_1.desc": "I'm In Love With An E-boy - Mewlings",
+
+  "item.mewcraft.clip_music_disc_1": "Clip Disc",
+  "item.mewcraft.clip_music_disc_1.desc": "Allergic - Mewlings",
+
   "block.mewcraft.test_block_1":"Test Block 1",
   "block.mewcraft.test_block_2": "Test Block 2",
   "block.mewcraft.sakura_block": "Sakura Block",
@@ -37,6 +43,7 @@
   "block.mewcraft.sakura_slab": "Sakura Slab",
   "block.mewcraft.sakura_stairs": "Sakura Stairs",
   "block.mewcraft.sakura_sign": "Sakura Sign",
+
 
 
   "mewcraft.entity_mewling_ambient": "Mewling Chirp",

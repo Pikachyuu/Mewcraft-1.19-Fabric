@@ -20,5 +20,21 @@
         "name": "mewcraft:mob/mewling/entity_mewling_death"
       }
     ]
+  },
+  "song_music_disc_1": {
+    "sounds": [
+      {
+        "name": "mewcraft:music_disc/song_music_disc_1",
+        "stream": true
+      }
+    ]
+  },
+  "clip_music_disc_1": {
+    "sounds": [
+      {
+        "name": "mewcraft:music_disc/clip_music_disc_1",
+        "stream": true
+      }
+    ]
   }
 }
