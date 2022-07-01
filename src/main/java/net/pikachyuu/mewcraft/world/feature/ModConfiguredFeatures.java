@@ -54,6 +54,20 @@ public class ModConfiguredFeatures {
             ConfiguredFeatures.register("sakura_ore", Feature.ORE,
                     new OreFeatureConfig(OVERWORLD_SAKURA_ORES, 3));
 
+    //Shitty hotfix I'm doing for mew world for the time being. Have fun future me.
+
+    public static final List<OreFeatureConfig.Target> MEW_WORLD_SAKURA_ORES = List.of(
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.SAKURA_ORE.getDefaultState()),
+
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    ModBlocks.DEEPSLATE_SAKURA_ORE.getDefaultState()));
+
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MEW_WORLD_SAKURA_ORE =
+            ConfiguredFeatures.register("mew_world_sakura_ore", Feature.ORE,
+                    new OreFeatureConfig(MEW_WORLD_SAKURA_ORES, 6));
+
     public static void registerConfiguredFeatures() {
         System.out.println("Registering ModConfiguredFeatures for " + Mewcraft.MOD_ID);
     }

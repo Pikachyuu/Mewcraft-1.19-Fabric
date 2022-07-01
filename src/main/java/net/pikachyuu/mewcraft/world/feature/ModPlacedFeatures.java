@@ -20,4 +20,7 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.SAKURA_SPAWN, VegetationPlacedFeatures.modifiers(
                     PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
 
+    public static final RegistryEntry<PlacedFeature> MEW_WORLD_SAKURA_ORE_PLACED = PlacedFeatures.register("mew_world_sakura_ore_placed",
+            ModConfiguredFeatures.SAKURA_ORE, ModOreFeatures.modifiersWithCount(2,
+                    HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
 }
