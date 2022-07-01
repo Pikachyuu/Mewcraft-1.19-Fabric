@@ -32,9 +32,50 @@
   "clip_music_disc_1": {
     "sounds": [
       {
-        "name": "mewcraft:music_disc/clip_music_disc_1",
+        "name": "mewcraft:music_disc/allergic",
+        "stream": true
+      }
+    ]
+  },
+  "clip_music_disc_2": {
+    "sounds": [
+      {
+        "name": "mewcraft:music_disc/bark",
+        "stream": true
+      }
+    ]
+  },
+  "clip_music_disc_3": {
+    "sounds": [
+      {
+        "name": "mewcraft:music_disc/cry",
+        "stream": true
+      }
+    ]
+  },
+  "clip_music_disc_4": {
+    "sounds": [
+      {
+        "name": "mewcraft:music_disc/dog",
+        "stream": true
+      }
+    ]
+  },
+  "clip_music_disc_5": {
+    "sounds": [
+      {
+        "name": "mewcraft:music_disc/scream",
+        "stream": true
+      }
+    ]
+  },
+  "clip_music_disc_6": {
+    "sounds": [
+      {
+        "name": "mewcraft:music_disc/sneeze",
         "stream": true
       }
     ]
   }
+
 }
