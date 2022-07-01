@@ -12,9 +12,14 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
+
     SAKURA("sakura", 42, new int[]{3, 6, 8, 3}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5F, 0.2F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.SAKURA_INGOT});
+    }),
+    MEWNITE("mewnite", 45, new int[]{5, 8, 10, 5}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5F, 0.2F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.MEWNITE_INGOT});
     });
+
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;
@@ -68,4 +73,5 @@ public enum ModArmorMaterials implements ArmorMaterial {
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
+
 }

@@ -4,10 +4,12 @@
   "item.mewcraft.crystalline_sakura": "Crystalline Sakura",
   "item.mewcraft.sakura_crystal": "Sakura Crystal",
   "item.mewcraft.sakura_ingot": "Sakura Ingot",
+
   "item.mewcraft.sakura_helmet": "Sakura Helmet",
   "item.mewcraft.sakura_chestplate": "Sakura Chestplate",
   "item.mewcraft.sakura_leggings": "Sakura Leggings",
   "item.mewcraft.sakura_boots": "Sakura Boots",
+
   "item.mewcraft.sakura_sword": "Sakura Sword",
   "item.mewcraft.sakura_pickaxe": "Sakura Pickaxe",
   "item.mewcraft.sakura_axe": "Sakura Axe",
@@ -15,11 +17,26 @@
   "item.mewcraft.sakura_hoe": "Sakura Hoe",
   "item.mewcraft.mewling_spawn_egg": "Mewling Spawn Egg",
 
+  "item.mewcraft.mewnite_helmet": "Mewnite Helmet",
+  "item.mewcraft.mewnite_chestplate": "Mewnite Chestplate",
+  "item.mewcraft.mewnite_leggings": "Mewnite Leggings",
+  "item.mewcraft.mewnite_boots": "Mewnite Boots",
+
   "item.mewcraft.song_music_disc_1": "Music Disc",
   "item.mewcraft.song_music_disc_1.desc": "I'm In Love With An E-boy - Mewlings",
 
   "item.mewcraft.clip_music_disc_1": "Clip Disc",
   "item.mewcraft.clip_music_disc_1.desc": "Allergic - Mewlings",
+  "item.mewcraft.clip_music_disc_2": "Clip Disc",
+  "item.mewcraft.clip_music_disc_2.desc": "Bark - Mewlings",
+  "item.mewcraft.clip_music_disc_3": "Clip Disc",
+  "item.mewcraft.clip_music_disc_3.desc": "Cry - Mewlings",
+  "item.mewcraft.clip_music_disc_4": "Clip Disc",
+  "item.mewcraft.clip_music_disc_4.desc": "Dog - Mewlings",
+  "item.mewcraft.clip_music_disc_5": "Clip Disc",
+  "item.mewcraft.clip_music_disc_5.desc": "Scream - Mewlings",
+  "item.mewcraft.clip_music_disc_6": "Clip Disc",
+  "item.mewcraft.clip_music_disc_6.desc": "Sneeze - Mewlings",
 
   "block.mewcraft.test_block_1":"Test Block 1",
   "block.mewcraft.test_block_2": "Test Block 2",

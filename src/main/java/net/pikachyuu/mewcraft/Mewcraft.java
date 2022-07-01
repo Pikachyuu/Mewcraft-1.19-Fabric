@@ -4,13 +4,14 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import net.pikachyuu.mewcraft.block.ModBlocks;
 import net.pikachyuu.mewcraft.item.ModItems;
-import net.pikachyuu.mewcraft.item.custom.CustomMusicDiscs;
+import net.pikachyuu.mewcraft.item.ModMusicDiscs;
 import net.pikachyuu.mewcraft.sound.ModSoundEvents;
+import net.pikachyuu.mewcraft.util.ModLootTableModifiers;
 import net.pikachyuu.mewcraft.util.ModRegistries;
 import net.pikachyuu.mewcraft.world.ModRegion;
 import net.pikachyuu.mewcraft.world.ModSurfaceRuleData;
 import net.pikachyuu.mewcraft.world.biome.ModBiomes;
-import net.pikachyuu.mewcraft.world.dimension.ModDimensions;
+//import net.pikachyuu.mewcraft.world.dimension.ModDimensions;
 import net.pikachyuu.mewcraft.world.feature.ModConfiguredFeatures;
 import net.pikachyuu.mewcraft.world.gen.ModWorldGen;
 import org.slf4j.Logger;
@@ -30,14 +31,16 @@ public class Mewcraft implements ModInitializer, TerraBlenderApi {
 
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
-		CustomMusicDiscs.registerCustomMusicDiscs();
+		ModMusicDiscs.registerCustomMusicDiscs();
 
 		ModRegistries.registerModStuffs();
 
 		ModWorldGen.generateModWorldGen();
 		ModBiomes.registerBiomes();
 
-		ModDimensions.registerModDimensions();
+		ModLootTableModifiers.modifyLootTables();
+
+		//ModDimensions.registerModDimensions();
 	}
 
 

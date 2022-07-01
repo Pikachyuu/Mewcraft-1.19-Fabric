@@ -10,6 +10,7 @@ import net.pikachyuu.mewcraft.Mewcraft;
 import net.pikachyuu.mewcraft.block.ModBlocks;
 import net.pikachyuu.mewcraft.entity.ModEntities;
 import net.pikachyuu.mewcraft.entity.custom.MewlingEntity;
+import net.pikachyuu.mewcraft.item.custom.MewniteArmorItem;
 import net.pikachyuu.mewcraft.item.custom.ModAxeItem;
 import net.pikachyuu.mewcraft.item.custom.ModHoeItem;
 import net.pikachyuu.mewcraft.item.custom.ModPickaxeItem;
@@ -76,6 +77,21 @@ public class ModItems {
             new SignItem(new FabricItemSettings().group(ModItemGroup.MEWCRAFT).maxCount(16),
                     ModBlocks.SAKURA_SIGN_BLOCK, ModBlocks.SAKURA_WALL_SIGN_BLOCK));
 
+    public static final Item MEWNITE_HELMET = registerItem("mewnite_helmet",
+            new MewniteArmorItem(ModArmorMaterials.MEWNITE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item MEWNITE_CHESTPLATE = registerItem("mewnite_chestplate",
+            new MewniteArmorItem(ModArmorMaterials.MEWNITE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item MEWNITE_LEGGINGS = registerItem("mewnite_leggings",
+            new MewniteArmorItem(ModArmorMaterials.MEWNITE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item MEWNITE_BOOTS = registerItem("mewnite_boots",
+            new MewniteArmorItem(ModArmorMaterials.MEWNITE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Mewcraft.MOD_ID, name), item);
