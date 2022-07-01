@@ -10,10 +10,7 @@ import net.pikachyuu.mewcraft.Mewcraft;
 import net.pikachyuu.mewcraft.block.ModBlocks;
 import net.pikachyuu.mewcraft.entity.ModEntities;
 import net.pikachyuu.mewcraft.entity.custom.MewlingEntity;
-import net.pikachyuu.mewcraft.item.custom.MewniteArmorItem;
-import net.pikachyuu.mewcraft.item.custom.ModAxeItem;
-import net.pikachyuu.mewcraft.item.custom.ModHoeItem;
-import net.pikachyuu.mewcraft.item.custom.ModPickaxeItem;
+import net.pikachyuu.mewcraft.item.custom.*;
 import net.pikachyuu.mewcraft.util.CustomBoatType;
 
 public class ModItems {
@@ -91,6 +88,10 @@ public class ModItems {
 
     public static final Item MEWNITE_BOOTS = registerItem("mewnite_boots",
             new MewniteArmorItem(ModArmorMaterials.MEWNITE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item MEWNITE_KATANA = registerItem("mewnite_katana",
+            new MewniteKatanaItem(ModToolMaterials.MEWNITE, 2, -2.0F,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     private static Item registerItem(String name, Item item) {

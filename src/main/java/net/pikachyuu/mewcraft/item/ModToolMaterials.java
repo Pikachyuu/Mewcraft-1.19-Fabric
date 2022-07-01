@@ -10,6 +10,10 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
     SAKURA(4, 2678,15.0F,5.0F,20, () -> {
         return Ingredient.ofItems(ModItems.SAKURA_INGOT);
+    }),
+
+    MEWNITE(5, 3156,18.0F,7.0F,25, () -> {
+        return Ingredient.ofItems(ModItems.MEWNITE_INGOT);
     });
 
     private final int miningLevel;
