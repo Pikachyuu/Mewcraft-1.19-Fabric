@@ -8,14 +8,14 @@ import net.minecraft.world.dimension.DimensionOptions;
 import net.minecraft.world.dimension.DimensionType;
 import net.pikachyuu.mewcraft.Mewcraft;
 
-/*
-public class ModDimensions {
-    public static final RegistryKey<World> MEWDIM_DIMENSION_KEY = RegistryKey.of(Registry.WORLD_KEY,
-            new Identifier(Mewcraft.MOD_ID, "mewdim"));
-    public static final RegistryKey<DimensionType> MEWDIM_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
-            MEWDIM_DIMENSION_KEY.getValue());
 
-    public static final RegistryKey<DimensionOptions> MEWDIM = RegistryKey.of(Registry.DIMENSION_KEY, new Identifier("mewdim"));
+public class ModDimensions {
+    public static final RegistryKey<World> MEW_WORLD_DIMENSION_KEY = RegistryKey.of(Registry.WORLD_KEY,
+            new Identifier(Mewcraft.MOD_ID, "mew_world"));
+    public static final RegistryKey<DimensionType> MEW_WORLD_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
+            MEW_WORLD_DIMENSION_KEY.getValue());
+
+    public static final RegistryKey<DimensionOptions> MEW_WORLD = RegistryKey.of(Registry.DIMENSION_KEY, new Identifier("mew_world"));
 
 
     public static void registerModDimensions() {
@@ -23,4 +23,4 @@ public class ModDimensions {
     }
 }
 
- */
+
