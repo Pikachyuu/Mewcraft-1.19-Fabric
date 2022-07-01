@@ -90,6 +90,9 @@ public class ModItems {
             new MewniteArmorItem(ModArmorMaterials.MEWNITE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
+    public static final Item SAKURA_IGNITER = registerItem("sakura_igniter",
+            new Item(new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
     public static final Item MEWNITE_KATANA = registerItem("mewnite_katana",
             new MewniteKatanaItem(ModToolMaterials.MEWNITE, 2, -2.0F,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));

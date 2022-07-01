@@ -16,6 +16,7 @@
   "item.mewcraft.sakura_shovel": "Sakura Shovel",
   "item.mewcraft.sakura_hoe": "Sakura Hoe",
   "item.mewcraft.mewling_spawn_egg": "Mewling Spawn Egg",
+  "item.mewcraft.sakura_igniter": "Sakura Igniter",
 
   "item.mewcraft.mewnite_helmet": "Mewnite Helmet",
   "item.mewcraft.mewnite_chestplate": "Mewnite Chestplate",
@@ -26,7 +27,6 @@
 
   "item.mewcraft.song_music_disc_1": "Music Disc",
   "item.mewcraft.song_music_disc_1.desc": "I'm In Love With An E-boy - Mewlings",
-
   "item.mewcraft.clip_music_disc_1": "Clip Disc",
   "item.mewcraft.clip_music_disc_1.desc": "Allergic - Mewlings",
   "item.mewcraft.clip_music_disc_2": "Clip Disc",
@@ -62,6 +62,7 @@
   "block.mewcraft.sakura_slab": "Sakura Slab",
   "block.mewcraft.sakura_stairs": "Sakura Stairs",
   "block.mewcraft.sakura_sign": "Sakura Sign",
+  "block.mewcraft.sakura_crystal_block": "Sakura Crystal Block",
 
 
 

@@ -29,6 +29,9 @@ public class ModBlocks {
     public static final Block MEWNITE_BLOCK = registerBlock("mewnite_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(3).requiresTool()), ModItemGroup.MEWCRAFT);
 
+    public static final Block SAKURA_CRYSTAL_BLOCK = registerBlock("sakura_crystal_block",
+            new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), ModItemGroup.MEWCRAFT);
+
     public static final Block SAKURA_ORE = registerBlock("sakura_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4).requiresTool(),
             UniformIntProvider.create(8, 12)), ModItemGroup.MEWCRAFT);
