@@ -46,6 +46,7 @@ public class ModConfiguredFeatures {
     public static final List<OreFeatureConfig.Target> OVERWORLD_SAKURA_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.SAKURA_ORE.getDefaultState()),
+
             OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     ModBlocks.DEEPSLATE_SAKURA_ORE.getDefaultState()));
 

@@ -5,7 +5,7 @@
     "settings": "minecraft:overworld",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "mewcraft:sakura_forest"
+      "biome": "mewcraft:mew_world_sakura_forest"
     }
   }
 }

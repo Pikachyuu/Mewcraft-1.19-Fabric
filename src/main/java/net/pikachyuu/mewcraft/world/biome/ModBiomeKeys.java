@@ -8,6 +8,7 @@ import net.pikachyuu.mewcraft.Mewcraft;
 
 public class ModBiomeKeys {
     public static final RegistryKey<Biome> SAKURA_FOREST = register("sakura_forest");
+    public static final RegistryKey<Biome> MEW_WORLD_SAKURA_FOREST = register("mew_world_sakura_forest");
 
     private static RegistryKey<Biome> register(String name)
     {

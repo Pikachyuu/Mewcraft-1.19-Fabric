@@ -14,7 +14,7 @@ import java.util.Arrays;
 
 public class ModEntitySpawn {
     public static void addEntitySpawn() {
-        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(ModBiomeKeys.SAKURA_FOREST),
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(ModBiomeKeys.MEW_WORLD_SAKURA_FOREST),
                 SpawnGroup.CREATURE, ModEntities.MEWLING, 25, 2, 4);
 
         SpawnRestrictionAccessor.callRegister(ModEntities.MEWLING, SpawnRestriction.Location.ON_GROUND,
