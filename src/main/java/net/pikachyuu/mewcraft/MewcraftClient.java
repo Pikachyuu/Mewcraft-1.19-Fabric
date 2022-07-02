@@ -11,6 +11,7 @@ import net.pikachyuu.mewcraft.entity.client.MewlingRenderer;
 import net.pikachyuu.mewcraft.item.ModItems;
 import net.pikachyuu.mewcraft.item.client.MewniteBattleAxeRenderer;
 import net.pikachyuu.mewcraft.item.client.MewniteKatanaRenderer;
+import net.pikachyuu.mewcraft.item.client.MewniteShovelRenderer;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 
@@ -30,5 +31,6 @@ public class MewcraftClient implements ClientModInitializer {
 
         GeoItemRenderer.registerItemRenderer(ModItems.MEWNITE_KATANA, new MewniteKatanaRenderer());
         GeoItemRenderer.registerItemRenderer(ModItems.MEWNITE_BATTLEAXE, new MewniteBattleAxeRenderer());
+        GeoItemRenderer.registerItemRenderer(ModItems.MEWNITE_SHOVEL, new MewniteShovelRenderer());
     }
 }

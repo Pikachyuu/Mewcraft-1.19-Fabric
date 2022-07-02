@@ -59,11 +59,11 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     public static final Item SAKURA_SHOVEL = registerItem("sakura_shovel",
-            new ShovelItem(ModToolMaterials.SAKURA, 1, -2.8F,
+            new ShovelItem(ModToolMaterials.SAKURA, 0, -2.8F,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     public static final Item SAKURA_HOE = registerItem("sakura_hoe",
-            new ModHoeItem(ModToolMaterials.SAKURA, 0, -2.8F,
+            new ModHoeItem(ModToolMaterials.SAKURA, -2, -2.8F,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     public static final Item MEWLING_SPAWN_EGG = registerItem("mewling_spawn_egg",
@@ -99,6 +99,10 @@ public class ModItems {
 
     public static final Item MEWNITE_BATTLEAXE = registerItem("mewnite_battleaxe",
             new MewniteBattleAxeItem(ModToolMaterials.MEWNITE, 7, -3.0F,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item MEWNITE_SHOVEL = registerItem("mewnite_shovel",
+            new MewniteShovelItem(ModToolMaterials.MEWNITE, -2, -2.8F,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
 

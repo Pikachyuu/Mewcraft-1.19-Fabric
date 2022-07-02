@@ -5,7 +5,7 @@
       "item": "mewcraft:mewnite_ingot"
     },
     "X": {
-      "item": "minecraft:mewling_tail"
+      "item": "mewcraft:mewling_tail"
     }
   },
   "pattern": [
@@ -14,6 +14,6 @@
     " X "
   ],
   "result": {
-    "item": "mewcraft:sakura_sword"
+    "item": "mewcraft:mewnite_battleaxe"
   }
 }

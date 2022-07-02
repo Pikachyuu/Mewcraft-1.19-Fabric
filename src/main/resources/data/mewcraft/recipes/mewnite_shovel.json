@@ -9,11 +9,11 @@
     }
   },
   "pattern": [
-    "  #",
     " # ",
-    "X  "
+    " X ",
+    " X "
   ],
   "result": {
-    "item": "mewcraft:mewnite_katana"
+    "item": "mewcraft:mewnite_shovel"
   }
 }
