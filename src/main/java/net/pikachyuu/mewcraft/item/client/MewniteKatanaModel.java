@@ -14,11 +14,11 @@ public class MewniteKatanaModel extends AnimatedGeoModel<MewniteKatanaItem> {
 
     @Override
     public Identifier getTextureResource(MewniteKatanaItem object) {
-        return new Identifier(Mewcraft.MOD_ID, "textures/item/mewnite_katana_texture.png");
+        return new Identifier(Mewcraft.MOD_ID, "textures/item/mewnite_tools_texture.png");
     }
 
     @Override
     public Identifier getAnimationResource(MewniteKatanaItem animatable) {
-        return new Identifier(Mewcraft.MOD_ID, "animations/mewnite_katana_animations.json");
+        return new Identifier(Mewcraft.MOD_ID, "animations/mewnite_tools_animations.json");
     }
 }

@@ -20,7 +20,7 @@ public class MewniteKatanaItem extends SwordItem implements IAnimatable {
 
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mewnite_tools.idle", true));
 
         return PlayState.CONTINUE;
     }
