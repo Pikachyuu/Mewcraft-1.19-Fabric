@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "mewcraft:mewnite_ingot"
+    },
+    "X": {
+      "item": "minecraft:mewling_tail"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " X "
+  ],
+  "result": {
+    "item": "mewcraft:sakura_sword"
+  }
+}
