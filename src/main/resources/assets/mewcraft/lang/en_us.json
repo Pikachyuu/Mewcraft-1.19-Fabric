@@ -5,7 +5,7 @@
   "item.mewcraft.sakura_crystal": "Sakura Crystal",
   "item.mewcraft.sakura_ingot": "Sakura Ingot",
 
-  "item.mewcraft+++++++++++.sakura_helmet": "Sakura Helmet",
+  "item.mewcraft.sakura_helmet": "Sakura Helmet",
   "item.mewcraft.sakura_chestplate": "Sakura Chestplate",
   "item.mewcraft.sakura_leggings": "Sakura Leggings",
   "item.mewcraft.sakura_boots": "Sakura Boots",
@@ -24,6 +24,7 @@
   "item.mewcraft.mewnite_boots": "Mewnite Boots",
 
   "item.mewcraft.mewnite_katana": "Mewnite Katana",
+  "item.mewcraft.mewnite_battleaxe": "Mewnite Battle Axe",
 
   "item.mewcraft.song_music_disc_1": "Music Disc",
   "item.mewcraft.song_music_disc_1.desc": "I'm In Love With An E-boy - Mewlings",

@@ -9,9 +9,9 @@
     }
   },
   "pattern": [
-    "  #",
-    " # ",
-    "X  "
+    "###",
+    "#X#",
+    " X "
   ],
   "result": {
     "item": "mewcraft:sakura_sword"

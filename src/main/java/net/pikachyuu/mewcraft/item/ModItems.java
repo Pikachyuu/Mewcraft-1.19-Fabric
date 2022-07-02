@@ -94,8 +94,13 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     public static final Item MEWNITE_KATANA = registerItem("mewnite_katana",
-            new MewniteKatanaItem(ModToolMaterials.MEWNITE, 2, -2.0F,
+            new MewniteKatanaItem(ModToolMaterials.MEWNITE, 2, -2.2F,
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
+    public static final Item MEWNITE_BATTLEAXE = registerItem("mewnite_battleaxe",
+            new MewniteBattleAxeItem(ModToolMaterials.MEWNITE, 7, -3.0F,
+                    new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Mewcraft.MOD_ID, name), item);
