@@ -27,7 +27,7 @@ public class ModItems {
     public static final Item MEWNITE_INGOT = registerItem("mewnite_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
-    public static final Item MEWLINGS_TAIL = registerItem("mewlings_tail",
+    public static final Item MEWLING_TAIL = registerItem("mewling_tail",
             new Item(new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     public static final Item SAKURA_HELMET = registerItem("sakura_helmet",

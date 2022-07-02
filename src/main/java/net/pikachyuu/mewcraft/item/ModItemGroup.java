@@ -9,5 +9,5 @@ import net.pikachyuu.mewcraft.Mewcraft;
 
 public class ModItemGroup {
     public static final ItemGroup MEWCRAFT = FabricItemGroupBuilder.build(new Identifier(Mewcraft.MOD_ID, "mewcraft"),
-            () -> new ItemStack(ModItems.MEWLINGS_TAIL));
+            () -> new ItemStack(ModItems.MEWLING_TAIL));
 }
