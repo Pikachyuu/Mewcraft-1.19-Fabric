@@ -50,8 +50,11 @@ public class Mewcraft implements ModInitializer, TerraBlenderApi {
 		// Given we only add two biomes, we should keep our weight relatively low.
 		Regions.register(new ModRegion(new Identifier(MOD_ID, "overworld"), 2));
 
-		// Register our surface rules
-		SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRuleData.makeRules());
-	}
+		final SurfaceRuleManager.RuleCategory overworldRuleCategory = SurfaceRuleManager.RuleCategory.OVERWORLD;
 
+		// Register our surface rules
+		SurfaceRuleManager.addSurfaceRules(overworldRuleCategory, MOD_ID, SurfaceRuleManager.getDefaultSurfaceRules(overworldRuleCategory));
+	}
 }
+
+//effect give @a minecraft:night_vision 100000 1 true
