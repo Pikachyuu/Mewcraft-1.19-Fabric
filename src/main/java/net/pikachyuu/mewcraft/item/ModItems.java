@@ -91,7 +91,7 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
 
     public static final Item SAKURA_IGNITER = registerItem("sakura_igniter",
-            new Item(new FabricItemSettings().group(ModItemGroup.MEWCRAFT)));
+            new Item(new FabricItemSettings().maxCount(1).group(ModItemGroup.MEWCRAFT)));
 
     public static final Item MEWNITE_KATANA = registerItem("mewnite_katana",
             new MewniteKatanaItem(ModToolMaterials.MEWNITE, 2, -2.2F,
