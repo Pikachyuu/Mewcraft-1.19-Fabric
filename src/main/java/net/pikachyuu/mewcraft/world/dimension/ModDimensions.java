@@ -30,7 +30,6 @@ public class ModDimensions {
                 .destDimID(MEW_WORLD_DIMENSION_KEY.getValue())
                 .tintColor(233, 177, 205)
                 .lightWithItem(ModItems.SAKURA_IGNITER)
-                .onlyLightInOverworld()
                 .registerPortal();
     }
 }
