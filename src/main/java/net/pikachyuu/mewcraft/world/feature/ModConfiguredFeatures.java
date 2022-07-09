@@ -43,6 +43,8 @@ public class ModConfiguredFeatures {
                     new RandomFeatureConfig(List.of(new RandomFeatureEntry(SAKURA_CHECKED, 0.5f)),
                             SAKURA_CHECKED));
 
+    // Configured features for ore generation in overworld
+
     public static final List<OreFeatureConfig.Target> OVERWORLD_SAKURA_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.SAKURA_ORE.getDefaultState()),
@@ -66,7 +68,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MEW_WORLD_SAKURA_ORE =
             ConfiguredFeatures.register("mew_world_sakura_ore", Feature.ORE,
-                    new OreFeatureConfig(MEW_WORLD_SAKURA_ORES, 6));
+                    new OreFeatureConfig(MEW_WORLD_SAKURA_ORES, 8));
 
     public static void registerConfiguredFeatures() {
         System.out.println("Registering ModConfiguredFeatures for " + Mewcraft.MOD_ID);
