@@ -4,9 +4,9 @@
     "item": "mewcraft:sakura_ingot"
   },
   "base": {
-    "item": "mewcraft:mewling_tail"
+    "item": "minecraft:netherite_boots"
   },
   "result": {
-    "item": "mewcraft:mewnite_ingot"
+    "item": "mewcraft:sakura_boots"
   }
 }

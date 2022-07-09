@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "mewcraft:sakura_chestplate"
+    },
+    "X": {
+      "item": "mewcraft:mewnite_ingot"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "item": "mewcraft:mewnite_chestplate"
+  }
+}

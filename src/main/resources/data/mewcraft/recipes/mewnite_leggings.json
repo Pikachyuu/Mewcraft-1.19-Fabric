@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "mewcraft:sakura_leggings"
+    },
+    "X": {
+      "item": "mewcraft:mewnite_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "X X"
+  ],
+  "result": {
+    "item": "mewcraft:mewnite_leggings"
+  }
+}
